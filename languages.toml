@@ -351,7 +351,6 @@ grammar = "janet-simple"
 [[grammar]]
 name = "janet-simple"
 source = { git = "https://github.com/sogaiu/tree-sitter-janet-simple", rev = "51271e260346878e1a1aa6c506ce6a797b7c25e2" }
-indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "json"
