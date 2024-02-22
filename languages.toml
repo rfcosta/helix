@@ -257,7 +257,7 @@ injection-regex = "toml"
 file-types = ["toml", { glob = "poetry.lock" }, { glob = "Cargo.lock" }]
 comment-token = "#"
 language-servers = [ "taplo" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "toml"
@@ -270,7 +270,7 @@ injection-regex = "awk"
 file-types = ["awk", "gawk", "nawk", "mawk"]
 comment-token = "#"
 language-servers = [ "awk-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "awk"
@@ -283,7 +283,7 @@ injection-regex = "protobuf"
 file-types = ["proto"]
 language-servers = [ "bufls", "pbkit" ]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "protobuf"
@@ -298,7 +298,7 @@ shebangs = ["elixir"]
 roots = ["mix.exs", "mix.lock"]
 comment-token = "#"
 language-servers = [ "elixir-ls" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "elixir"
@@ -327,7 +327,7 @@ file-types = ["mint"]
 shebangs = []
 comment-token = "//"
 language-servers = [ "mint" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "janet"
@@ -351,6 +351,7 @@ grammar = "janet-simple"
 [[grammar]]
 name = "janet-simple"
 source = { git = "https://github.com/sogaiu/tree-sitter-janet-simple", rev = "51271e260346878e1a1aa6c506ce6a797b7c25e2" }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "json"
@@ -381,7 +382,7 @@ file-types = [
 ]
 language-servers = [ "vscode-json-language-server" ]
 auto-format = true
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "json"
@@ -409,7 +410,7 @@ injection-regex = "c"
 file-types = ["c"] # TODO: ["h"]
 comment-token = "//"
 language-servers = [ "clangd" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.debugger]
 name = "lldb-vscode"
@@ -445,7 +446,7 @@ injection-regex = "cpp"
 file-types = ["cc", "hh", "c++", "cpp", "hpp", "h", "ipp", "tpp", "cxx", "hxx", "ixx", "txx", "ino", "C", "H", "cu", "cuh", "cppm", "h++", "ii", "inl", { glob = ".hpp.in" }, { glob = ".h.in" }]
 comment-token = "//"
 language-servers = [ "clangd" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.debugger]
 name = "lldb-vscode"
@@ -480,7 +481,7 @@ scope = "source.cr"
 file-types = ["cr"]
 roots = ["shard.yml", "shard.lock"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "ruby"
 language-servers = [ "crystalline" ]
 
@@ -615,7 +616,7 @@ injection-regex = "gotmpl"
 file-types = ["gotmpl"]
 comment-token = "//"
 language-servers = [ "gopls" ]
-indent = { tab-width = 2, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "gotmpl"
@@ -644,7 +645,7 @@ file-types = ["js", "mjs", "cjs", "rules", "es6", "pac", { glob = "jakefile" }]
 shebangs = ["node"]
 comment-token = "//"
 language-servers = [ "typescript-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.debugger]
 name = "node-debug2"
@@ -670,7 +671,7 @@ language-id = "javascriptreact"
 file-types = ["jsx"]
 comment-token = "//"
 language-servers = [ "typescript-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "javascript"
 
 [[language]]
@@ -681,7 +682,7 @@ file-types = ["ts", "mts", "cts"]
 language-id = "typescript"
 shebangs = ["deno", "ts-node"]
 language-servers = [ "typescript-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "typescript"
@@ -694,7 +695,7 @@ injection-regex = "(tsx)" # |typescript
 language-id = "typescriptreact"
 file-types = ["tsx"]
 language-servers = [ "typescript-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "tsx"
@@ -707,7 +708,7 @@ injection-regex = "css"
 file-types = ["css", "scss"]
 language-servers = [ "vscode-css-language-server" ]
 auto-format = true
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "css"
@@ -720,7 +721,7 @@ injection-regex = "scss"
 file-types = ["scss"]
 language-servers = [ "vscode-css-language-server" ]
 auto-format = true
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "scss"
@@ -733,7 +734,7 @@ injection-regex = "html"
 file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml"]
 language-servers = [ "vscode-html-language-server" ]
 auto-format = true
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "html"
@@ -763,7 +764,7 @@ file-types = ["ncl"]
 shebangs = []
 comment-token = "#"
 language-servers = [ "nls" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '(' = ')'
@@ -783,7 +784,7 @@ file-types = ["nix"]
 shebangs = []
 comment-token = "#"
 language-servers = [ "nil" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "nix"
@@ -832,7 +833,7 @@ file-types = [
 shebangs = ["ruby"]
 comment-token = "#"
 language-servers = [ "solargraph" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "ruby"
@@ -888,7 +889,7 @@ file-types = [
 shebangs = ["sh", "bash", "dash", "zsh"]
 comment-token = "#"
 language-servers = [ "bash-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "bash"
@@ -913,7 +914,7 @@ name = "twig"
 scope = "source.twig"
 injection-regex = "twig"
 file-types = ["twig"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "twig"
@@ -967,7 +968,7 @@ file-types = ["lean"]
 roots = [ "lakefile.lean" ]
 comment-token = "--"
 language-servers = [ "lean" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "lean"
@@ -1006,7 +1007,7 @@ injection-regex = "java"
 file-types = ["java", "jav"]
 roots = ["pom.xml", "build.gradle", "build.gradle.kts"]
 language-servers = [ "jdtls" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "java"
@@ -1043,7 +1044,7 @@ scope = "source.beancount"
 injection-regex = "beancount"
 file-types = ["beancount", "bean"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "beancount"
@@ -1057,7 +1058,7 @@ file-types = ["ml"]
 shebangs = ["ocaml", "ocamlrun", "ocamlscript"]
 comment-token = "(**)"
 language-servers = [ "ocamllsp" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '(' = ')'
@@ -1076,7 +1077,7 @@ file-types = ["mli"]
 shebangs = []
 comment-token = "(**)"
 language-servers = [ "ocamllsp" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '(' = ')'
@@ -1096,7 +1097,7 @@ file-types = ["lua"]
 shebangs = ["lua", "luajit"]
 roots = [".luarc.json", ".luacheckrc", ".stylua.toml", "selene.toml", ".git"]
 comment-token = "--"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "lua-language-server" ]
 
 [[grammar]]
@@ -1108,7 +1109,7 @@ name = "svelte"
 scope = "source.svelte"
 injection-regex = "svelte"
 file-types = ["svelte"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "svelteserver" ]
 
 [[grammar]]
@@ -1121,7 +1122,7 @@ scope = "source.vue"
 injection-regex = "vue"
 file-types = ["vue"]
 roots = ["package.json"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "vuels" ]
 
 [[grammar]]
@@ -1133,7 +1134,7 @@ name = "yaml"
 scope = "source.yaml"
 file-types = ["yml", "yaml"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "yaml-language-server", "ansible-language-server" ]
 injection-regex = "yml|yaml"
 
@@ -1149,7 +1150,7 @@ file-types = ["hs", "hs-boot"]
 roots = ["Setup.hs", "stack.yaml", "cabal.project"]
 comment-token = "--"
 language-servers = [ "haskell-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "haskell"
@@ -1160,7 +1161,7 @@ name = "haskell-persistent"
 scope = "source.persistentmodels"
 file-types = ["persistentmodels"]
 comment-token = "--"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "haskell-persistent"
@@ -1174,7 +1175,7 @@ file-types = ["purs"]
 roots = ["spago.yaml", "spago.dhall", "bower.json"]
 comment-token = "--"
 language-servers = [ "purescript-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 auto-format = true
 formatter = { command = "purs-tidy", args = ["format"] }
 
@@ -1235,7 +1236,7 @@ scope = "source.tsq"
 file-types = ["tsq"]
 comment-token = ";"
 injection-regex = "tsq"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "tsq"
@@ -1246,7 +1247,7 @@ name = "cmake"
 scope = "source.cmake"
 file-types = ["cmake", { glob = "CMakeLists.txt" }]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "cmake-language-server" ]
 injection-regex = "cmake"
 
@@ -1286,7 +1287,7 @@ file-types = ["pl", "pm", "t", "psgi", "raku", "rakumod", "rakutest", "rakudoc",
 shebangs = ["perl"]
 comment-token = "#"
 language-servers = [ "perlnavigator" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "perl"
@@ -1308,7 +1309,7 @@ scope = "source.racket"
 file-types = ["rkt", "rktd", "rktl", "scrbl"]
 shebangs = ["racket"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "racket" ]
 grammar = "scheme"
 
@@ -1318,7 +1319,7 @@ scope = "source.lisp"
 file-types = ["lisp", "asd", "cl", "l", "lsp", "ny", "podsl", "sexp"]
 shebangs = ["lisp", "sbcl", "ccl", "clisp", "ecl"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "cl-lsp" ]
 grammar = "scheme"
 
@@ -1355,7 +1356,7 @@ name = "llvm"
 scope = "source.llvm"
 file-types = ["ll"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 injection-regex = "llvm"
 
 [[grammar]]
@@ -1367,7 +1368,7 @@ name = "llvm-mir"
 scope = "source.llvm_mir"
 file-types = []
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 injection-regex = "mir"
 
 [[grammar]]
@@ -1382,14 +1383,14 @@ name = "llvm-mir-yaml"
 scope = "source.yaml"
 file-types = ["mir"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "tablegen"
 scope = "source.tablegen"
 file-types = ["td"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 injection-regex = "tablegen"
 
 [[grammar]]
@@ -1403,7 +1404,7 @@ injection-regex = "md|markdown"
 file-types = ["md", "markdown", "mkd", "mdwn", "mdown", "markdn", "mdtxt", "mdtext", "workbook", { glob = "PULLREQ_EDITMSG" }]
 roots = [".marksman.toml"]
 language-servers = [ "marksman" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "markdown"
@@ -1428,7 +1429,7 @@ roots = ["pubspec.yaml"]
 auto-format = true
 comment-token = "//"
 language-servers = [ "dart" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "dart"
@@ -1440,7 +1441,7 @@ scope = "source.scala"
 roots = ["build.sbt", "build.sc", "build.gradle", "build.gradle.kts", "pom.xml", ".scala-build"]
 file-types = ["scala", "sbt", "sc"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "metals" ]
 
 [[grammar]]
@@ -1454,7 +1455,7 @@ injection-regex = "docker|dockerfile"
 roots = ["Dockerfile", "Containerfile"]
 file-types = [{ glob = "Dockerfile*" }, { glob = "dockerfile*" }, { glob = "Containerfile*" }, { glob = "containerfile*" }]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "docker-langserver" ]
 
 [[grammar]]
@@ -1476,7 +1477,7 @@ name = "git-commit"
 scope = "git.commitmsg"
 file-types = [{ glob = "COMMIT_EDITMSG" }]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 rulers = [51, 73]
 text-width = 72
 
@@ -1490,7 +1491,7 @@ scope = "source.diff"
 file-types = ["diff", "patch", "rej"]
 injection-regex = "diff"
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "diff"
@@ -1502,7 +1503,7 @@ scope = "source.gitrebase"
 file-types = [{ glob = "git-rebase-todo" }]
 injection-regex = "git-rebase"
 comment-token = "#"
-indent = { tab-width = 2, unit = "y" }
+indent = { tab-width = 4, unit = "y" }
 
 [[grammar]]
 name = "git-rebase"
@@ -1560,7 +1561,7 @@ scope = "source.graphql"
 injection-regex = "graphql"
 file-types = ["gql", "graphql", "graphqls"]
 language-servers = [ "graphql-language-service" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "graphql"
@@ -1600,7 +1601,7 @@ roots = ["bsconfig.json"]
 auto-format = true
 comment-token = "//"
 language-servers = [ "rescript-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "rescript"
@@ -1649,7 +1650,7 @@ injection-regex = "(hcl|tf|nomad)"
 language-id = "terraform"
 file-types = ["hcl", "tf", "nomad"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "terraform-ls" ]
 auto-format = true
 
@@ -1663,7 +1664,7 @@ scope = "source.tfvars"
 language-id = "terraform-vars"
 file-types = ["tfvars"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "terraform-ls" ]
 auto-format = true
 grammar = "hcl"
@@ -1673,7 +1674,7 @@ name = "org"
 scope = "source.org"
 injection-regex = "org"
 file-types = ["org"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "org"
@@ -1699,7 +1700,7 @@ injection-regex = "gleam"
 file-types = ["gleam"]
 roots = ["gleam.toml"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "gleam" ]
 auto-format = true
 
@@ -1725,7 +1726,7 @@ scope = "source.robot"
 injection-regex = "robot"
 file-types = ["robot", "resource"]
 comment-token = "#"
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "robotframework_ls" ]
 
 [[grammar]]
@@ -1739,7 +1740,7 @@ injection-regex = "(r|R)"
 file-types = ["r", "R", { glob = ".Rprofile" }, { glob = "Rprofile.site" }, { glob = ".RHistory" }]
 shebangs = ["r", "R"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "r" ]
 
 [[grammar]]
@@ -1752,7 +1753,7 @@ scope = "source.rmd"
 language-id = "rmd"
 injection-regex = "(r|R)md"
 file-types = ["rmd", "Rmd"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "markdown"
 language-servers = [ "r" ]
 
@@ -1775,7 +1776,7 @@ name = "erb"
 scope = "text.html.erb"
 injection-regex = "erb"
 file-types = ["erb"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "embedded-template"
 
 [[language]]
@@ -1783,7 +1784,7 @@ name = "ejs"
 scope = "text.html.ejs"
 injection-regex = "ejs"
 file-types = ["ejs"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "embedded-template"
 
 [[grammar]]
@@ -1796,7 +1797,7 @@ scope = "source.eex"
 injection-regex = "eex"
 file-types = ["eex"]
 roots = ["mix.exs", "mix.lock"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "eex"
@@ -1808,7 +1809,7 @@ scope = "source.heex"
 injection-regex = "heex"
 file-types = ["heex"]
 roots = ["mix.exs", "mix.lock"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "elixir-ls" ]
 
 [[grammar]]
@@ -1865,7 +1866,7 @@ injection-regex = "nu"
 file-types = ["nu"]
 shebangs = ["nu"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "nu-lsp" ]
 
 [[grammar]]
@@ -1878,7 +1879,7 @@ scope = "source.vala"
 injection-regex = "vala"
 file-types = ["vala", "vapi"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "vala-language-server" ]
 
 [[grammar]]
@@ -1891,7 +1892,7 @@ scope = "source.hare"
 injection-regex = "hare"
 file-types = ["ha"]
 comment-token = "//"
-indent = { tab-width = 8, unit = "\t" }
+indent = { tab-width = 4, unit = "\t" }
 
 [[grammar]]
 name = "hare"
@@ -1927,7 +1928,7 @@ injection-regex = "cpon"
 file-types = ["cpon", "cp"]
 auto-format = true
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "cpon"
@@ -1954,7 +1955,7 @@ scope = "source.meson"
 injection-regex = "meson"
 file-types = [{ glob = "meson.build" }, { glob = "meson_options.txt" }]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "meson"
@@ -1977,7 +1978,7 @@ injection-regex = "scheme"
 file-types = ["ss", "scm"]
 shebangs = ["scheme", "guile", "chicken"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '(' = ')'
@@ -2010,7 +2011,7 @@ scope = "source.verilog"
 file-types = ["v", "vh", "sv", "svh"]
 comment-token = "//"
 language-servers = [ "svlangserver" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 injection-regex = "verilog"
 
 [[grammar]]
@@ -2033,7 +2034,7 @@ name = "jsdoc"
 scope = "source.jsdoc"
 injection-regex = "jsdoc"
 file-types = ["jsdoc"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "jsdoc"
@@ -2046,7 +2047,7 @@ injection-regex = "openscad"
 file-types = ["scad"]
 comment-token = "//"
 language-servers = [ "openscad-lsp" ]
-indent = { tab-width = 2, unit = "\t" }
+indent = { tab-width = 4, unit = "\t" }
 
 [[grammar]]
 name = "openscad"
@@ -2060,7 +2061,7 @@ file-types = ["prisma"]
 roots = ["package.json"]
 comment-token = "//"
 language-servers = [ "prisma-language-server" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "prisma"
@@ -2074,7 +2075,7 @@ file-types = ["clj", "cljs", "cljc", "clje", "cljr", "cljx", "edn", "boot"]
 roots = ["project.clj", "build.boot", "deps.edn", "shadow-cljs.edn"]
 comment-token = ";"
 language-servers = [ "clojure-lsp" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "clojure"
@@ -2094,7 +2095,7 @@ name = "elvish"
 scope = "source.elvish"
 file-types = ["elv"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "elvish" ]
 grammar = "elvish"
 
@@ -2109,7 +2110,7 @@ injection-regex = "idr"
 file-types = ["idr"]
 shebangs = []
 comment-token = "--"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "idris2-lsp" ]
 
 [[language]]
@@ -2119,7 +2120,7 @@ injection-regex = "fortran"
 file-types = ["f", "for", "f90", "f95", "f03"]
 roots = ["fpm.toml"]
 comment-token = "!"
-indent = { tab-width = 4, unit = "    "}
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "fortls" ]
 
 [[grammar]]
@@ -2132,7 +2133,7 @@ scope = "source.ungrammar"
 injection-regex = "ungrammar"
 file-types = ["ungram", "ungrammar"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "ungrammar"
@@ -2186,7 +2187,7 @@ scope = "source.task"
 injection-regex = "task"
 file-types = ["task"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "task"
@@ -2209,7 +2210,7 @@ scope = "source.esdl"
 injection-regex = "esdl"
 file-types = ["esdl"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 roots = ["edgedb.toml"]
 
 [[grammar]]
@@ -2222,7 +2223,7 @@ scope = "source.pascal"
 injection-regex = "pascal"
 file-types = ["pas", "pp", "inc", "lpr", "lfm"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "pasls" ]
 
 [[grammar]]
@@ -2246,7 +2247,7 @@ scope = "source.jsonnet"
 file-types = ["libsonnet", "jsonnet"]
 roots = ["jsonnetfile.json"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "jsonnet-language-server" ]
 
 [[grammar]]
@@ -2258,7 +2259,7 @@ name = "astro"
 scope = "source.astro"
 injection-regex = "astro"
 file-types = ["astro"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "astro"
@@ -2270,7 +2271,7 @@ scope = "source.bass"
 injection-regex = "bass"
 file-types = ["bass"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "bass" ]
 
 [[grammar]]
@@ -2303,7 +2304,7 @@ scope = "source.d"
 file-types = [ "d", "dd" ]
 comment-token = "//"
 injection-regex = "d"
-indent = { tab-width = 4, unit = "    "}
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "serve-d" ]
 formatter = { command = "dfmt" }
 
@@ -2316,7 +2317,7 @@ name = "vhs"
 scope = "source.vhs"
 file-types = ["tape"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "vhs"
 
 [[grammar]]
@@ -2396,7 +2397,7 @@ file-types = [
   "musicxml",
   "glif"
 ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '(' = ')'
@@ -2416,7 +2417,7 @@ name = "dtd"
 scope = "source.dtd"
 injection-regex = "dtd"
 file-types = ["dtd", "ent"]
-indent = {tab-width = 2, unit = "  "}
+indent = { tab-width = 4, unit = "    "}
 
 [language.auto-pairs]
 '(' = ')'
@@ -2435,7 +2436,7 @@ scope = "source.wit"
 injection-regex = "wit"
 file-types = ["wit"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '(' = ')'
@@ -2499,7 +2500,7 @@ scope = "source.bicep"
 file-types = ["bicep"]
 auto-format = true
 comment-token = "//"
-indent = { tab-width = 2, unit = " "}
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "bicep-langserver" ]
 
 [[grammar]]
@@ -2536,7 +2537,7 @@ scope = "source.m"
 file-types = ["m"]
 comment-token = "%"
 shebangs = ["octave-cli", "matlab"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "matlab"
@@ -2548,7 +2549,7 @@ scope = "source.pony"
 file-types = ["pony"]
 injection-regex = "pony"
 roots = ["corral.json", "lock.json"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 comment-token = "//"
 
 [[grammar]]
@@ -2561,7 +2562,7 @@ scope = "source.dhall"
 injection-regex = "dhall"
 file-types = ["dhall"]
 comment-token = "--"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "dhall-lsp-server" ]
 formatter = { command = "dhall" , args = ["format"] }
 
@@ -2583,7 +2584,7 @@ name = "msbuild"
 scope = "source.msbuild"
 injection-regex = "msbuild"
 file-types = ["proj", "vbproj", "csproj", "fsproj", "targets", "props"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "xml"
 
 [language.auto-pairs]
@@ -2642,7 +2643,7 @@ scope = "source.yuck"
 injection-regex = "yuck"
 file-types = ["yuck"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "yuck"
@@ -2676,7 +2677,7 @@ scope = "source.nasm"
 file-types = ["asm", "S", "nasm"]
 injection-regex = "n?asm"
 comment-token = ";"
-indent = { tab-width = 8, unit = "        " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "nasm"
@@ -2688,7 +2689,7 @@ scope = "source.gas"
 file-types = ["s"]
 injection-regex = "gas"
 comment-token = "#"
-indent = { tab-width = 8, unit = "        " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "gas"
@@ -2710,7 +2711,7 @@ scope = "source.capnp"
 injection-regex = "capnp"
 file-types = ["capnp"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "capnp"
@@ -2736,7 +2737,7 @@ scope = "source.vhdl"
 file-types = ["vhd", "vhdl"]
 comment-token = "--"
 language-servers = [ "vhdl_ls" ]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 injection-regex = "vhdl"
 
 [[grammar]]
@@ -2764,7 +2765,7 @@ injection-regex = "nim"
 file-types = ["nim", "nims", "nimble"]
 shebangs = []
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "nimlangserver" ]
 
 [language.auto-pairs]
@@ -2784,7 +2785,7 @@ name = "cabal"
 scope = "source.cabal"
 file-types = [ "cabal" ]
 roots = ["cabal.project", "Setup.hs"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 comment-token = "--"
 language-servers = [ "haskell-language-server" ]
 
@@ -2794,7 +2795,7 @@ scope = "source.hurl"
 injection-regex = "hurl"
 file-types = ["hurl"]
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "hurl"
@@ -2843,7 +2844,7 @@ injection-regex = "gn"
 file-types = ["gn", "gni"]
 roots = []
 comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 formatter = { command = "gn", args = ["format", "--stdin"] }
 
 [[grammar]]
@@ -2870,7 +2871,7 @@ injection-regex = "forth"
 file-types = ["fs", "forth", "fth", "4th"]
 comment-token = "\\"
 language-servers = [ "forth-lsp" ]
-indent = { tab-width = 3, unit = "   " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "forth"
@@ -2897,7 +2898,7 @@ scope = "source.t32"
 injection-regex = "t32"
 file-types = ["cmm", "t32"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "t32"
@@ -2908,7 +2909,7 @@ name = "webc"
 scope = "text.html.webc"
 injection-regex = "webc"
 file-types = ["webc"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "html"
 
 [[language]]
@@ -2918,7 +2919,7 @@ injection-regex = "typst"
 file-types = ["typst", "typ"]
 comment-token = "//"
 language-servers = ["typst-lsp"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '(' = ')'
@@ -2936,7 +2937,7 @@ name = "nunjucks"
 scope = "text.html.nunjucks"
 injection-regex = "nunjucks"
 file-types = ["njk"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "jinja2"
 
 [[language]]
@@ -2944,7 +2945,7 @@ name = "jinja"
 scope = "text.html.jinja"
 injection-regex = "jinja"
 file-types = ["jinja", "jinja2", "j2"]
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 grammar = "jinja2"
 
 [[grammar]]
@@ -2960,7 +2961,7 @@ name = "wren"
 scope = "source.wren"
 injection-regex = "wren"
 file-types = ["wren"]
-indent = { tab-width = 2, unit = "  "}
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "unison"
@@ -3022,7 +3023,7 @@ comment-token = "--"
 # language-servers = [ "als" ]
 # the agda language server is of questionable functionality.
 auto-format = false
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [language.auto-pairs]
 '"' = '"'
@@ -3044,7 +3045,7 @@ scope = "source.templ"
 file-types = ["templ"]
 roots = ["go.work", "go.mod"]
 comment-token = "//"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "templ" ]
 
 [[grammar]]
@@ -3057,7 +3058,7 @@ scope = "source.dbml"
 injection-regex = "dbml"
 file-types = ["dbml"]
 comment-token = ";"
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "dbml"
@@ -3090,7 +3091,7 @@ scope = "source.conf"
 file-types = ["conf"]
 comment-token = "#"
 auto-format = true
-indent = { tab-width = 2, unit = "  " }
+indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "hocon"
@@ -3138,3 +3139,4 @@ indent = { tab-width = 2, unit = "  " }
 [[grammar]]
 name = "groovy"
 source = { git = "https://github.com/Decodetalkers/tree-sitter-groovy", rev = "7e023227f46fee428b16a0288eeb0f65ee2523ec" }
+
