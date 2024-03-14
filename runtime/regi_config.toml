@@ -6,9 +6,9 @@
 
 # theme = "regi-doom_acario_dark"
 # theme = "regi-boo_berry"
-# theme  = "regi-snazzy"
+  theme  = "regi-snazzy"
 # theme  = "snazzy"
-  theme  = "regi-bogster"
+# theme  = "regi-bogster"
 
 [editor]
 line-number = "relative"
