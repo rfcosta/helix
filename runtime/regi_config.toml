@@ -6,9 +6,10 @@
 
 # theme = "regi-doom_acario_dark"
 # theme = "regi-boo_berry"
-  theme  = "regi-snazzy"
 # theme  = "snazzy"
 # theme  = "regi-bogster"
+# theme  = "regi-snazzy"
+  theme  = "vim_dark_high_contrast"
 
 [editor]
 line-number = "relative"
