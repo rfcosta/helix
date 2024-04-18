@@ -1,0 +1,14 @@
+inherits = "doom_acario_dark"
+
+# Override the theming for "keyword"s:
+"keyword" = { fg = "gold" }
+"ui.cursor.select" = { fg = "black", bg = "white" }
+"ui.selection" = { fg = "black", bg = "aqua" }
+
+# Override colors in the palette:
+[palette]
+#berry = "#2A2A4D"
+black = "#000000"
+white = "#FFFFFF"
+regi  = "#0CECF3"
+aqua  = "#00FFFF"
